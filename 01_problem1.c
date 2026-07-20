@@ -1,15 +1,10 @@
 #include <stdio.h>
 
-int main() {
-    // int length = 3;
-    // int breadth = 6;
-    int length, breadth;
-    printf("Enter length\n");
-    scanf("%d", &length);
-
-    printf("Enter breadth\n");
-    scanf("%d", &breadth);
-
-    printf("The area of this rectangle is %d", length * breadth);
+int main(){
+    // Which of the following is invalid in C?
+    int a = 1;
+    int b = a;
+    int v = 3*3;
+    char dt = '21 dec 2020'; // Wrong!
     return 0;
 }

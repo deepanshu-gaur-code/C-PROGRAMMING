@@ -1,11 +1,8 @@
 #include <stdio.h>
 
 int main(){
-    float c = 37.0, f;
-
-    f=((9.0/5.0)*c)+32;
-
-    printf("The value in Fahrenheit is %f", f);
-    
+    // a = 2342354
+    int a = 3349895;
+    printf("The value of a%97 is %d", a%97);
     return 0;
 }
