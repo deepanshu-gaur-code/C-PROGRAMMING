@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 int main(){
-    // Which of the following is invalid in C?
-    int a = 1;
-    int b = a;
-    int v = 3*3;
-    char dt = '21 dec 2020'; // Wrong!
+    int a = 10;
+    if (a = 11)
+         printf("I am 11");
+    else
+         printf("I am not 11");
     return 0;
 }
+// it gives output as a I am 11 because the condition in the if statement is using the assignment operator '=' instead of the equality operator '=='. This means that 'a' is being assigned the value 11, which evaluates to true, so the first printf statement is executed. To fix this, you should use '==' for comparison:

@@ -1,15 +1,20 @@
 #include <stdio.h>
 
 int main(){
-    // Explain step by step evaluation of 3*x/y – z+k, where x=2, y=3, z=3, k=1
-    int x = 2, y = 3, z = 3, k = 1;
-    float e = 3*x/y - z+k;
-    printf("The value of e  is %f", e);
-    // 3*x/y - z+k;
-    // 6/y - z+k;
-    // 2-z+k;
-    // -1+k
-    // -1+1
-    // 0
+    int year;
+    printf("Enter year: \n");
+    scanf("%d", &year);
+
+    if((year %4==0 && year%100!=0) || year %400==0){
+        printf("This is a leap year");
+    }
+    else{
+        printf("This is not a leap year");
+    }
     return 0;
 }
+/*A year is a leap year if:
+
+It is divisible by 4, AND
+If it is divisible by 100, it is not a leap year, UNLESS
+It is also divisible by 400.*/
